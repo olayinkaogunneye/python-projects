@@ -41,3 +41,12 @@ except FileNotFoundError:
                     status = "[x]" if task ["completed"] else "[]"
                     print(f"{index}. {status} {task["task"]}")
 
+                    try:
+                        task_number = int(input("Enter the task number to mark as completd:"))
+                        if 1 <= task_number <= len(to_do_list):
+                            to_do_list[task_number -1]["completd"] = True
+                            print("task marked as completed.")
+                        else: print("invalid task number.")
+                    except ValueError:
+                        print("please enter a valid number.")
+

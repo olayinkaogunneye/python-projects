@@ -46,7 +46,31 @@ except FileNotFoundError:
                         if 1 <= task_number <= len(to_do_list):
                             to_do_list[task_number -1]["completd"] = True
                             print("task marked as completed.")
-                        else: print("invalid task number.")
+                        else: 
+                            print("invalid task number.")
                     except ValueError:
                         print("please enter a valid number.")
+        
+        # Delete task
+
+        elif choice == "3":
+            if not to_do_list:
+                print("No tasks available to delete.")
+            else:
+                print("\nYour Tasks:")
+                for index, task in enumerate(to_do_list, start =1):
+                    status = "[x]" if task ["completed"] else "[]"
+                    print(f"{index}. {status} {task["task"]}")
+
+                    try:
+                        task_number = int(input("Enter task number"))
+                        if 1 <= task_number <= len(to_do_list):
+                            removed_task = to_do_list.pop(task_number -1)
+                            print(f"Task '{removed_task["task"]}' deleted.")
+                        else:
+                            print("invalid task number.")
+                    except ValueError:
+                            print("please enter a valid number.")
+                        
+
 

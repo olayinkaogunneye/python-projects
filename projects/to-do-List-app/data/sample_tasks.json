@@ -1,0 +1,23 @@
+[
+    {
+        "task": "Buy groceries",
+        "completed": false,
+        "priority": "High",
+        "category": "Errands",
+        "due_date": "2025-02-10"
+    },
+    {
+        "task": "Finish analytics project",
+        "completed": false,
+        "priority": "High",
+        "category": "Work",
+        "due_date": "2025-02-15"
+    },
+    {
+        "task": "Call family",
+        "completed": true,
+        "priority": "Low",
+        "category": "Personal",
+        "due_date": null
+    }
+]

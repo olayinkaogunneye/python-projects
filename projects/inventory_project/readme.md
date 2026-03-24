@@ -117,8 +117,10 @@ A sample dataset is included to help you test the application:
     "lemon": 9,
     "lime": 8
 }
+```
 
-🔮 Future Improvements
+
+## 🔮 Future Improvements
 Here are some ideas for expanding the project:
 
 Export inventory to CSV
@@ -135,7 +137,7 @@ Add colorized terminal output
 
 Add batch operations using *args or **kwargs
 
-💡 Why This Project Matters
+## 💡 Why This Project Matters
 This project demonstrates:
 
 Real Python fundamentals
@@ -152,5 +154,5 @@ Practical application of Python skills
 
 It’s a strong portfolio piece because it shows both technical ability and developer thinking.
 
-📜 License
+## 📜 License
 This project is open‑source and free to use for learning or personal development.

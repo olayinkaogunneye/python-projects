@@ -5,7 +5,7 @@ import json
 # Inventory Loading & Saving
 # -----------------------------
 
-def load_inventory(filename="inventory.json"):
+def load_inventory(filename ="inventory.json"):
     """
     Load the inventory from a JSON file.
 
@@ -165,7 +165,11 @@ def search_item(inventory, keyword):
         None
     """
     print(f"\nSearch results for '{keyword}':")
-    results = {item: qty for item, qty in inventory.items() if keyword.lower() in item.lower()}
+    results = {
+        item: qty 
+        for item, qty in inventory.items() 
+        
+        if keyword.lower() in item.lower()}
 
     if results:
         for item, qty in results.items():

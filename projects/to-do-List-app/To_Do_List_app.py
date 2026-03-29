@@ -1,4 +1,5 @@
 import json
+
 from datetime import datetime
 
 
@@ -6,7 +7,7 @@ from datetime import datetime
 # Loading & Saving Tasks
 # -----------------------------
 
-def load_tasks(filename="to-do-list.json"):
+def load_tasks(filename = "to-do-list.json"):
     """
     Load tasks from a JSON file.
 

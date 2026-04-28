@@ -108,3 +108,40 @@ def plot_duration_distribution(df, title="Distribution of Movie Durations", save
         plt.savefig(save_path, bbox_inches="tight")
 
     plt.show()
+
+# ---------------------------------------------------------
+# Comparison charts for 1990s vs other years
+# ---------------------------------------------------------
+
+def plot_genre_comparison(genre_90s, genre_other, save_path=None):
+    """Plot side-by-side genre comparison."""
+    plt.figure(figsize=(12, 6))
+
+    plt.subplot(1, 2, 1)
+    sns.barplot(x=genre_90s.values, y=genre_90s.index, palette="viridis")
+    plt.title("Top Genres — 1990s")
+
+    plt.subplot(1, 2, 2)
+    sns.barplot(x=genre_other.values, y=genre_other.index, palette="magma")
+    plt.title("Top Genres — Other Years")
+
+    if save_path:
+        plt.savefig(save_path, bbox_inches="tight")
+
+    plt.show()
+
+
+def plot_duration_comparison(avg_dict, save_path=None):
+    """Simple bar chart comparing average durations."""
+    labels = ["1990s", "Other Years"]
+    values = [avg_dict["1990s_avg_duration"], avg_dict["other_avg_duration"]]
+
+    plt.figure(figsize=(6, 5))
+    sns.barplot(x=labels, y=values, palette="coolwarm")
+    plt.title("Average Duration Comparison")
+    plt.ylabel("Minutes")
+
+    if save_path:
+        plt.savefig(save_path, bbox_inches="tight")
+
+    plt.show()

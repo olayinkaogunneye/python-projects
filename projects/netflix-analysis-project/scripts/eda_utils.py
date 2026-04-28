@@ -113,3 +113,27 @@ def duration_distribution(df):
     """
     return df["duration_int"].describe()
 
+# ---------------------------------------------------------
+#  comparing 1990s movies to other movies
+# --------------------------------------------------------- 
+
+def filter_non_1990s(df):
+    """Return movies NOT released between 1990 and 1999."""
+    return df[(df["release_year"] < 1990) | (df["release_year"] > 1999)].copy()
+
+
+def compare_avg_duration(df_1990s, df_other):
+    """Return a simple comparison of average duration."""
+    return {
+        "1990s_avg_duration": df_1990s["duration_int"].mean(),
+        "other_avg_duration": df_other["duration_int"].mean()
+    }
+
+
+def compare_genre_distribution(df_1990s, df_other, n=10):
+    """Return top genres for both groups."""
+    top_90s = df_1990s["genre"].value_counts().head(n)
+    top_other = df_other["genre"].value_counts().head(n)
+    return top_90s, top_other
+
+

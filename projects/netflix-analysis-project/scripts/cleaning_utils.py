@@ -1,83 +1,133 @@
-
 """
-cleaning_utils.py
+Utility functions for cleaning the Netflix dataset.
 
-This module contains reusable helper functions for cleaning datasets.
-These functions are intentionally generic so they can be used across
-multiple notebooks and projects.
+This file contains a few helper functions I use in Notebook 1
+to clean text fields, parse dates, extract duration info, and
+apply some basic feature engineering.
 
-They DO NOT perform full cleaning pipelines — they only handle small,
-reusable cleaning tasks such as renaming columns, converting types,
-and filling missing values.
+The goal is to keep the notebook clean and move repeated logic here.
 """
 
+import re
+import logging
 import pandas as pd
 
+# basic logging setup
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
-def clean_column_names(df):
+logger = logging.getLogger(__name__)
+
+
+# ---------------------------------------------------------
+# Text cleaning
+# ---------------------------------------------------------
+
+def clean_text(value):
     """
-    Standardize column names by:
-    - stripping whitespace
-    - converting to lowercase
-    - replacing spaces with underscores
-
-    This ensures consistent naming across the project.
-
-    Parameters:
-        df (pd.DataFrame): Input dataframe
-
-    Returns:
-        pd.DataFrame: Dataframe with cleaned column names
+    Remove weird unicode characters and trim whitespace.
+    Some titles in the dataset contain zero‑width characters,
+    so this helps normalize them.
     """
-    df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
-    return df
+    if not isinstance(value, str):
+        return value
+
+    # remove zero‑width unicode characters
+    value = re.sub(r"[\u200b-\u200f\u202a-\u202e]", "", value)
+
+    return value.strip()
 
 
-def convert_to_datetime(df, col):
+# ---------------------------------------------------------
+# Date parsing
+# ---------------------------------------------------------
+
+def parse_date(date_str):
     """
-    Convert a column to datetime format.
-
-    Parameters:
-        df (pd.DataFrame): Input dataframe
-        col (str): Column name to convert
-
-    Returns:
-        pd.DataFrame: Updated dataframe with datetime column
+    Convert the 'date_added' column into a proper datetime.
+    If parsing fails, return NaT instead of crashing.
     """
-    df[col] = pd.to_datetime(df[col], errors='coerce')
-    return df
+    try:
+        return pd.to_datetime(date_str, errors="coerce")
+    except Exception as e:
+        logger.warning(f"Could not parse date: {date_str} ({e})")
+        return pd.NaT
 
 
-def convert_to_numeric(df, col):
+# ---------------------------------------------------------
+# Duration parsing
+# ---------------------------------------------------------
+
+def parse_duration(raw_value):
     """
-    Convert a column to numeric values.
-
-    Non-numeric values become NaN.
-
-    Parameters:
-        df (pd.DataFrame)
-        col (str)
-
-    Returns:
-        pd.DataFrame
+    Split the duration column into a numeric value and a type.
+    Examples:
+        '93 min' -> (93, 'min')
+        '2 Seasons' -> (2, 'Seasons')
     """
-    df[col] = pd.to_numeric(df[col], errors='coerce')
-    return df
+    if not isinstance(raw_value, str):
+        return None, None
+
+    num = re.findall(r"\d+", raw_value)
+    typ = re.findall(r"[A-Za-z]+", raw_value)
+
+    duration_num = int(num[0]) if num else None
+    duration_type = typ[0] if typ else None
+
+    return duration_num, duration_type
 
 
-def fill_missing(df, col, value="Unknown"):
+# ---------------------------------------------------------
+# Main cleaning pipeline
+# ---------------------------------------------------------
+
+def clean_dataframe(df):
     """
-    Fill missing values in a column with a default value.
+    Apply the full cleaning pipeline to the Netflix dataset.
 
-    Useful for categorical fields like country, director, cast.
-
-    Parameters:
-        df (pd.DataFrame)
-        col (str)
-        value (str): Replacement value
-
-    Returns:
-        pd.DataFrame
+    Steps:
+    - clean text fields
+    - parse dates
+    - split duration into numeric + type
+    - fill missing values
+    - add year_added and decade columns
     """
-    df[col] = df[col].fillna(value)
+
+    logger.info("Starting cleaning process...")
+
+    # clean text columns
+    text_columns = ["title", "director", "cast", "country", "description", "genre"]
+    for col in text_columns:
+        if col in df.columns:
+            df[col] = df[col].apply(clean_text)
+
+    # parse date_added
+    if "date_added" in df.columns:
+        df["date_added"] = df["date_added"].apply(parse_date)
+
+    # parse duration
+    if "duration" in df.columns:
+        parsed = df["duration"].apply(parse_duration)
+        df["duration_int"] = parsed.apply(lambda x: x[0])
+        df["duration_type"] = parsed.apply(lambda x: x[1])
+
+    # fill missing values
+    df["director"] = df["director"].fillna("Unknown")
+    df["cast"] = df["cast"].fillna("Unknown")
+    df["country"] = df["country"].fillna("Unknown")
+
+    # if date is missing, set to a placeholder
+    df["date_added"] = df["date_added"].fillna(pd.Timestamp("1900-01-01"))
+
+    # feature engineering
+    if "date_added" in df.columns:
+        df["year_added"] = df["date_added"].dt.year
+
+    if "release_year" in df.columns:
+        df["decade"] = (df["release_year"] // 10) * 10
+
+    logger.info("Cleaning completed.")
+
     return df

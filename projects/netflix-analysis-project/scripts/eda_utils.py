@@ -1,72 +1,115 @@
 """
 eda_utils.py
 
-This module contains helper functions for exploratory data analysis.
-These functions perform common EDA tasks such as counting, grouping,
-and filtering. They are intentionally generic so they can be reused
-in Notebook 2, Notebook 3, or future projects.
+A small collection of helper functions for exploratory analysis
+on the cleaned Netflix dataset. These functions are used mainly
+in Notebook 2 (1990s analysis) and Notebook 3 (global trends).
+
+The idea is to keep the notebooks tidy and move repeated logic here.
 """
 
+import pandas as pd
 
-def count_by_year(df, year_col='release_year'):
+
+# ---------------------------------------------------------
+# Filtering helpers
+# ---------------------------------------------------------
+
+def filter_movies(df):
+    """Return only rows where type == 'Movie'."""
+    return df[df["type"] == "Movie"].copy()
+
+
+def filter_tv_shows(df):
+    """Return only rows where type == 'TV Show'."""
+    return df[df["type"] == "TV Show"].copy()
+
+
+def filter_1990s(df):
+    """Return movies released between 1990 and 1999."""
+    return df[(df["release_year"] >= 1990) & (df["release_year"] <= 1999)].copy()
+
+
+# ---------------------------------------------------------
+# Basic aggregations
+# ---------------------------------------------------------
+
+def movies_per_year(df):
     """
-    Count number of records per year.
-
-    Parameters:
-        df (pd.DataFrame)
-        year_col (str): Column representing the year
-
-    Returns:
-        pd.Series: Year → Count
+    Count how many movies were released each year.
+    Works for any subset (e.g., 1990s movies).
     """
-    return df[year_col].value_counts().sort_index()
+    return (
+        df.groupby("release_year")
+          .size()
+          .reset_index(name="count")
+          .sort_values("release_year")
+    )
 
 
-def top_n(df, col, n=10):
+def top_genres(df, n=10):
     """
-    Return the top N most frequent values in a column.
-
-    Parameters:
-        df (pd.DataFrame)
-        col (str)
-        n (int)
-
-    Returns:
-        pd.Series
+    Return the top N genres by frequency.
+    Assumes the 'genre' column contains a single genre per row.
     """
-    return df[col].value_counts().head(n)
+    return (
+        df["genre"]
+        .value_counts()
+        .reset_index()
+        .rename(columns={"index": "genre", "genre": "count"})
+        .head(n)
+    )
 
 
-def average_by_group(df, group_col, value_col):
+def avg_duration_by_genre(df):
     """
-    Compute the average of a numeric column grouped by another column.
-
-    Example:
-        Average duration by genre
-
-    Parameters:
-        df (pd.DataFrame)
-        group_col (str)
-        value_col (str)
-
-    Returns:
-        pd.Series
+    Compute the average duration (in minutes) for each genre.
+    Only applies to movies.
     """
-    return df.groupby(group_col)[value_col].mean().sort_values(ascending=False)
+    return (
+        df.groupby("genre")["duration_int"]
+          .mean()
+          .reset_index()
+          .sort_values("duration_int", ascending=False)
+    )
 
 
-def filter_decade(df, decade):
+def country_counts(df, n=10):
     """
-    Filter rows belonging to a specific decade.
-
-    Example:
-        decade = 1990 → returns 1990–1999
-
-    Parameters:
-        df (pd.DataFrame)
-        decade (int)
-
-    Returns:
-        pd.DataFrame
+    Return the top N countries by number of titles.
+    If a row contains multiple countries, only the first is used.
     """
-    return df[df['release_year'].between(decade, decade + 9)]
+    temp = df["country"].fillna("Unknown").str.split(",", expand=True)[0]
+    return (
+        temp.value_counts()
+            .reset_index()
+            .rename(columns={"index": "country", "country": "count"})
+            .head(n)
+    )
+
+
+def top_directors(df, n=10):
+    """
+    Return the most frequent directors in the dataset.
+    Rows with 'Unknown' are ignored.
+    """
+    temp = df[df["director"] != "Unknown"]["director"]
+    return (
+        temp.value_counts()
+            .reset_index()
+            .rename(columns={"index": "director", "director": "count"})
+            .head(n)
+    )
+
+
+# ---------------------------------------------------------
+# Duration statistics
+# ---------------------------------------------------------
+
+def duration_distribution(df):
+    """
+    Return basic statistics for movie durations.
+    Useful for plotting histograms or boxplots.
+    """
+    return df["duration_int"].describe()
+

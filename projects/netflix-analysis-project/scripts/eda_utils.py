@@ -54,10 +54,12 @@ def top_genres(df, n=10):
     """
     return (
         df["genre"]
+        .str.split(", ")
+        .explode()
         .value_counts()
-        .reset_index()
-        .rename(columns={"index": "genre", "genre": "count"})
         .head(n)
+        .reset_index(name="count")
+        .rename(columns={"index": "genre"})
     )
 
 
@@ -79,12 +81,15 @@ def country_counts(df, n=10):
     Return the top N countries by number of titles.
     If a row contains multiple countries, only the first is used.
     """
-    temp = df["country"].fillna("Unknown").str.split(",", expand=True)[0]
     return (
-        temp.value_counts()
-            .reset_index()
-            .rename(columns={"index": "country", "country": "count"})
-            .head(n)
+        df["country"]
+        .fillna("Unknown")
+        .str.split(", ")
+        .explode()
+        .value_counts()
+        .head(n)
+        .reset_index(name="count")
+        .rename(columns={"index": "country"})
     )
 
 
@@ -135,5 +140,3 @@ def compare_genre_distribution(df_1990s, df_other, n=10):
     top_90s = df_1990s["genre"].value_counts().head(n)
     top_other = df_other["genre"].value_counts().head(n)
     return top_90s, top_other
-
-

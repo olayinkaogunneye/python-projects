@@ -190,7 +190,8 @@ def low_stock_alert(inventory, threshold=5):
         None
     """
     print(f"\nItems below stock level {threshold}:")
-    low_items = {item: qty for item, qty in inventory.items() if qty < threshold}
+
+    low_items = {item : qty for item, qty in inventory.items() if qty < threshold}
 
     if low_items:
         for item, qty in low_items.items():

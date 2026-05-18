@@ -69,10 +69,10 @@ def avg_duration_by_genre(df):
     Only applies to movies.
     """
     return (
-        df.groupby("genre")["duration_int"]
+        df.groupby("genre")["duration"]
           .mean()
           .reset_index()
-          .sort_values("duration_int", ascending=False)
+          .sort_values("duration", ascending=False)
     )
 
 
@@ -116,7 +116,7 @@ def duration_distribution(df):
     Return basic statistics for movie durations.
     Useful for plotting histograms or boxplots.
     """
-    return df["duration_int"].describe()
+    return df["duration"].describe()
 
 # ---------------------------------------------------------
 #  comparing 1990s movies to other movies
@@ -130,8 +130,8 @@ def filter_non_1990s(df):
 def compare_avg_duration(df_1990s, df_other):
     """Return a simple comparison of average duration."""
     return {
-        "1990s_avg_duration": df_1990s["duration_int"].mean(),
-        "other_avg_duration": df_other["duration_int"].mean()
+        "1990s_avg_duration": df_1990s["duration"].mean(),
+        "other_avg_duration": df_other["duration"].mean()
     }
 
 

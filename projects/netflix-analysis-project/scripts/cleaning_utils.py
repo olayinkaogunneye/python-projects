@@ -59,10 +59,8 @@ def clean_dataframe(df):
     df["year_added"] = df["date_added"].dt.year
 
     # Duration handling (integer column)
-    logger.info("Splitting duration into numeric + type")
+    logger.info("Splitting duration into type")
 
-    # numeric duration
-    df["duration_int"] = df["duration"].astype(int)
 
     # duration type based on show type
     df["duration_type"] = np.where(

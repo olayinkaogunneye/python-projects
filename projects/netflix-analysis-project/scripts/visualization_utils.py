@@ -57,7 +57,7 @@ def plot_avg_duration(df, title="Average Duration by Genre", save_path=None):
     Expects columns: genre, duration_int.
     """
     plt.figure(figsize=(12, 6))
-    sns.barplot(data=df, x="duration_int", y="genre", palette="magma")
+    sns.barplot(data=df, x="duration", y="genre", palette="magma")
     plt.title(title)
     plt.xlabel("Average Duration (minutes)")
     plt.ylabel("Genre")
@@ -66,6 +66,26 @@ def plot_avg_duration(df, title="Average Duration by Genre", save_path=None):
         plt.savefig(save_path, bbox_inches="tight")
 
     plt.show()
+
+    
+def plot_avg_duration_by_decade(df, title="Average Duration by Decade", save_path=None):
+
+    """
+    Plot average movie duration by decade.
+    Expects columns: decade, duration.
+    """
+    plt.figure(figsize=(10, 5))
+    sns.barplot(data=df, x="decade", y="duration", palette="viridis")
+    plt.title(title)
+    plt.xlabel("Decade")
+    plt.ylabel("Average Duration (minutes)")
+    plt.grid(True, axis="y")
+
+    if save_path:
+        plt.savefig(save_path, bbox_inches="tight")
+
+    plt.show()
+
 
 
 # ---------------------------------------------------------
@@ -99,7 +119,7 @@ def plot_duration_distribution(df, title="Distribution of Movie Durations", save
     Expects column: duration_int.
     """
     plt.figure(figsize=(10, 5))
-    sns.histplot(df["duration_int"], bins=30, kde=True, color="steelblue")
+    sns.histplot(df["duration"], bins=30, kde=True, color="steelblue")
     plt.title(title)
     plt.xlabel("Duration (minutes)")
     plt.ylabel("Frequency")

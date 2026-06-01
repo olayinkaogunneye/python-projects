@@ -1,7 +1,7 @@
 # 🎬 Movies Metadata Cleaning Pipeline
 
-A professional, modular data‑engineering project for cleaning and preparing  
-the TMDB Movies Metadata dataset.
+A professional, modular data‑engineering project for ingesting, cleaning, and preparing  
+a Movies Metadata dataset for analysis, visualization, and downstream modeling.
 
 ---
 
@@ -26,52 +26,66 @@ movie-metadata-cleaning/
 ---
 
 
----
-
 ## 🚀 Pipeline Overview
 
-### 1. Ingestion
-Located in: `src/ingestion/ingest_movies_metadata.py`
+### **1. Ingestion**
+📍 *Location:* `src/ingestion/ingest_movies_metadata.py`
 
-- Loads raw CSV  
-- Validates file  
-- Sends DataFrame to cleaning pipeline  
-- Saves cleaned dataset as Parquet  
+The ingestion module:
 
-### 2. Cleaning
-Located in: `src/cleaning/clean_movies_metadata.py`
+- Loads the raw CSV file  
+- Validates file structure and column names  
+- Standardizes column naming  
+- Passes the DataFrame into the cleaning pipeline  
+- Saves the cleaned dataset as a Parquet file in `data/cleaned/`  
 
-Cleaning steps include:
-- fixing data types  
-- normalizing list columns  
-- cleaning text  
-- removing duplicates  
-- handling missing values  
+---
 
-Full details in: `docs/cleaning_steps.md`
+### **2. Cleaning**
+📍 *Location:* `src/cleaning/clean_movies_metadata.py`
+
+The cleaning pipeline performs:
+
+- Data type corrections  
+- Normalization of list‑like columns (genres, cast, production companies, production countries)  
+- Text cleaning and whitespace normalization  
+- Duplicate removal  
+- Missing value handling  
+- Validation of numeric fields (budget, revenue, runtime)  
+
+Full details documented in:
+
+`docs/cleaning_steps.md`
+
 
 ---
 
 ## 📊 Notebooks
-Located in: `notebooks/01_exploration.ipynb`
 
-Used for:
-- validating the cleaned dataset  
-- exploratory data analysis  
-- visualizations  
-- exporting charts to `reports/`  
+📍 *Location:* `notebooks/01_exploration.ipynb`
+
+The notebook is used for:
+
+- Validating the cleaned dataset  
+- Exploratory data analysis (EDA)  
+- Visualizing distributions, correlations, and categorical patterns  
+- Exporting charts to the `reports/` directory  
 
 ---
 
 ## 📚 Documentation
-- `docs/cleaning_steps.md` — full cleaning pipeline  
-- `docs/data_dictionary.md` — column definitions  
-- `docs/README.md` — project overview  
+
+- `docs/cleaning_steps.md` — Detailed cleaning pipeline  
+- `docs/data_dictionary.md` — Column definitions and metadata  
+- `docs/README.md` — Project overview and methodology
+- `docs/insights_summary` - Detailed insights  
 
 ---
 
 ## 🧪 Requirements
-Install dependencies:
+
+Install all dependencies:
+
 
 pip install -r requirements.txt
 
@@ -80,4 +94,4 @@ pip install -r requirements.txt
 
 ## 📝 Author
 Olayinka Ogunneye  
-Data Engineer & Analytics Consultant  
+Analytics Engineer & Analytics Consultant  

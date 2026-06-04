@@ -7,7 +7,7 @@ a Movies Metadata dataset for analysis, visualization, and downstream modeling.
 
 ## 📁 Project Structure
 
----
+```
 
 movie-metadata-cleaning/
 ├─ data/
@@ -22,6 +22,8 @@ movie-metadata-cleaning/
 ├─ docs/
 ├─ reports/
 └─ requirements.txt
+
+```
 
 ---
 

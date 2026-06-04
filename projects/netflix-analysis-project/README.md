@@ -25,6 +25,8 @@ The project is organized using a clean, analytics‑engineering‑style structur
 
 # 🗂️ Project Structure
 
+```
+
 netflix-analysis-project/
 │
 ├── data/
@@ -51,6 +53,8 @@ netflix-analysis-project/
 │
 ├── README.md                    # Main project documentation
 └── requirements.txt             # Python dependencies
+
+```
 
 ---
 

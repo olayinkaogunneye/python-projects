@@ -1,0 +1,50 @@
+[
+  {
+    "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+    "price": 17.66,
+    "availability": "In stock (18 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/2b/1b/2b1bfecae9d512cb6ee943ccf786216f.jpg",
+    "category": "Spirituality"
+  },
+  {
+    "title": "The Activist's Tao Te Ching: Ancient Advice for a Modern Revolution",
+    "price": 32.24,
+    "availability": "In stock (16 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/da/0c/da0ca35421a5120b2109028e44a53f56.jpg",
+    "category": "Spirituality"
+  },
+  {
+    "title": "Chasing Heaven: What Dying Taught Me About Living",
+    "price": 37.8,
+    "availability": "In stock (15 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/87/cd/87cd2aa5c4e38244ffcb17b84b0f6efd.jpg",
+    "category": "Spirituality"
+  },
+  {
+    "title": "If I Gave You God's Phone Number....: Searching for Spirituality in America",
+    "price": 20.91,
+    "availability": "In stock (9 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/91/1a/911a12f954fc65fc4cc0e8a8f8b30750.jpg",
+    "category": "Spirituality"
+  },
+  {
+    "title": "Unreasonable Hope: Finding Faith in the God Who Brings Purpose to Your Pain",
+    "price": 46.33,
+    "availability": "In stock (7 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/80/43/804385d2b49e2f9e26a7d88b8ccaf62d.jpg",
+    "category": "Spirituality"
+  },
+  {
+    "title": "A New Earth: Awakening to Your Life's Purpose",
+    "price": 55.65,
+    "availability": "In stock (4 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/13/1b/131bca3895aa2892f400020cd939cd42.jpg",
+    "category": "Spirituality"
+  }
+]

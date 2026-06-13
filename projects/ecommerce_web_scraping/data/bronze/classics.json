@@ -1,0 +1,154 @@
+[
+  {
+    "title": "The Secret Garden",
+    "price": 15.08,
+    "availability": "In stock (5 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/f1/78/f17805e88aed31aae352ab250b2a379d.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Metamorphosis",
+    "price": 28.58,
+    "availability": "In stock (5 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/9b/33/9b33c3c40c8d27054a3edf96cbf6a2fb.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Pilgrim's Progress",
+    "price": 50.26,
+    "availability": "In stock (4 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/91/2a/912acfe6ee354d9d9bf3c1fa517c4252.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Hound of the Baskervilles (Sherlock Holmes #5)",
+    "price": 14.82,
+    "availability": "In stock (4 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/9d/fe/9dfe2a73c6a1a1c09927c904de641ebf.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Little Women (Little Women #1)",
+    "price": 28.07,
+    "availability": "In stock (4 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/55/a9/55a942b0c092c40bdbb6a1f1be340984.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Gone with the Wind",
+    "price": 32.49,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/ac/ee/acee20cff19be38cc3efc5e9b50afae4.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Candide",
+    "price": 58.63,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/e7/7d/e77d917c495e649216225bd47e006482.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Animal Farm",
+    "price": 57.22,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/73/b9/73b9d68a89e6d037f1afdc70f96bad09.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Wuthering Heights",
+    "price": 17.73,
+    "availability": "In stock (3 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/d8/64/d8644073d00c000cb60643256080cc4b.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Picture of Dorian Gray",
+    "price": 29.7,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/67/29/67297ff3ae6cb02884c52e5250fe7c1a.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Complete Stories and Poems (The Works of Edgar Allan Poe [Cameo Edition])",
+    "price": 26.78,
+    "availability": "In stock (3 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/55/2d/552d55d44dcc0f27e98b3e7dc3959e1a.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Beowulf",
+    "price": 38.35,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/3d/8c/3d8cd7a42d3e57cb10e02f9ab76bd549.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "And Then There Were None",
+    "price": 35.01,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/6f/b0/6fb0c3064656f888125ab577b6a01867.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Story of Hong Gildong",
+    "price": 43.19,
+    "availability": "In stock (1 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/b5/5b/b55be7e5c18b62cef6ebeae404f7f643.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "The Little Prince",
+    "price": 45.42,
+    "availability": "In stock (1 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/c0/d6/c0d67625e62981155f5e1f553bda1a94.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Sense and Sensibility",
+    "price": 37.46,
+    "availability": "In stock (1 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/a8/57/a857deea83c7d4c66e2920e1cf5d8fe0.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Of Mice and Men",
+    "price": 47.11,
+    "availability": "In stock (1 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/a0/bb/a0bb0881c8ee6f5866804cf0a437853f.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Emma",
+    "price": 32.93,
+    "availability": "In stock (1 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/ae/98/ae98d08a6f427491dd8eda6b51af41fe.jpg",
+    "category": "Classics"
+  },
+  {
+    "title": "Alice in Wonderland (Alice's Adventures in Wonderland #1)",
+    "price": 55.53,
+    "availability": "In stock (1 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/99/df/99df494c230127c3d5ff53153d1f23a3.jpg",
+    "category": "Classics"
+  }
+]

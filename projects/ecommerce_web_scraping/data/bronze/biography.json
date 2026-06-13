@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Louisa: The Extraordinary Life of Mrs. Adams",
+    "price": 16.85,
+    "availability": "In stock (15 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/ec/2a/ec2a7df6fdafc7e6f97b6c6da7980584.jpg",
+    "category": "Biography"
+  },
+  {
+    "title": "Setting the World on Fire: The Brief, Astonishing Life of St. Catherine of Siena",
+    "price": 21.15,
+    "availability": "In stock (11 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/86/54/86546f67cb4a3112b15b03a4ec2e7255.jpg",
+    "category": "Biography"
+  },
+  {
+    "title": "The Faith of Christopher Hitchens: The Restless Soul of the World's Most Notorious Atheist",
+    "price": 39.55,
+    "availability": "In stock (7 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/d7/cb/d7cbdb36b54398ba3876488726befc3d.jpg",
+    "category": "Biography"
+  },
+  {
+    "title": "Benjamin Franklin: An American Life",
+    "price": 48.19,
+    "availability": "In stock (7 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/c2/7e/c27efce6a2321c10b0d34035308ace37.jpg",
+    "category": "Biography"
+  },
+  {
+    "title": "The Rise of Theodore Roosevelt (Theodore Roosevelt #1)",
+    "price": 42.57,
+    "availability": "In stock (3 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/4c/09/4c090b85892f532210e44d84b752b64d.jpg",
+    "category": "Biography"
+  }
+]

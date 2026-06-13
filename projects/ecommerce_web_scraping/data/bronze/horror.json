@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Security",
+    "price": 39.25,
+    "availability": "In stock (16 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/79/2b/792bdeb2cf7d8efaef0e401e5a27b4da.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Follow You Home",
+    "price": 21.36,
+    "availability": "In stock (15 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/bb/c0/bbc0bdad3ad7f390017ea66bb7019579.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "The Loney",
+    "price": 23.4,
+    "availability": "In stock (14 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/84/cc/84cc7f93a8c6c766a6297a23227e68e8.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Pet Sematary",
+    "price": 10.56,
+    "availability": "In stock (14 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/99/ef/99ef2f3987ee016bdd120a4579ef98f5.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Doctor Sleep (The Shining #2)",
+    "price": 40.12,
+    "availability": "In stock (14 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/30/05/30053f9d8549febc67059c52fca65744.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Psycho: Sanitarium (Psycho #1.5)",
+    "price": 36.97,
+    "availability": "In stock (12 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/91/98/9198cedbd37561f2aa343d3eb04ee703.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Can You Keep a Secret? (Fear Street Relaunch #4)",
+    "price": 48.64,
+    "availability": "In stock (12 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/03/83/0383a7f9cce4ab8fa1c5db6e69b169c6.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Red Dragon (Hannibal Lecter #1)",
+    "price": 23.37,
+    "availability": "In stock (5 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/4a/ce/4acec5ebebf374e7a84a5d8c74ee5752.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Dracula the Un-Dead",
+    "price": 35.63,
+    "availability": "In stock (5 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/b1/f2/b1f25fa4623b3ee2db6fb6d6e27c6fb5.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Night Shift (Night Shift #1-20)",
+    "price": 12.75,
+    "availability": "In stock (4 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/b8/84/b8843e0c3fbadb1682b095c99eda7f7a.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Needful Things",
+    "price": 47.51,
+    "availability": "In stock (4 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/d2/d8/d2d818d6654086560072fe1d42189636.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "Misery",
+    "price": 34.79,
+    "availability": "In stock (4 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/cc/fb/ccfb8bb0f63377a67fb0a39d513f6cab.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "It",
+    "price": 25.01,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/f9/40/f9409b5717cc44f29aa444d85ad26bdc.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "'Salem's Lot",
+    "price": 49.56,
+    "availability": "In stock (4 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/d3/55/d35568710e773adf06a0bc756a99f66d.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "The Stand",
+    "price": 57.86,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/f9/8b/f98bdf42af5e223bc0f6ea6bd0a48a53.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "The Girl with All the Gifts",
+    "price": 49.47,
+    "availability": "In stock (3 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/9a/91/9a911066cb404976bcc25dbc8817432a.jpg",
+    "category": "Horror"
+  },
+  {
+    "title": "House of Leaves",
+    "price": 54.89,
+    "availability": "In stock (3 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/20/c2/20c2ff61355569b4f84e2f847e37db25.jpg",
+    "category": "Horror"
+  }
+]

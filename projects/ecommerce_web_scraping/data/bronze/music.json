@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Rip it Up and Start Again",
+    "price": 35.02,
+    "availability": "In stock (19 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/81/7f/817f5089c0e6e62738dce2931e7323d3.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Our Band Could Be Your Life: Scenes from the American Indie Underground, 1981-1991",
+    "price": 57.25,
+    "availability": "In stock (19 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/ad/96/ad96e9c9f1664cbcb0e9627b007fb6f9.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "How Music Works",
+    "price": 37.32,
+    "availability": "In stock (19 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/1d/40/1d4087ff0a63f09fae9cd8433d21c2c4.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Love Is a Mix Tape (Music #1)",
+    "price": 18.03,
+    "availability": "In stock (14 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/b2/43/b2430e3958014d962042a14a912151ac.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Please Kill Me: The Uncensored Oral History of Punk",
+    "price": 31.19,
+    "availability": "In stock (8 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/8e/bb/8ebbba84c204b011527a8f4bd082b03f.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Kill 'Em and Leave: Searching for James Brown and the American Soul",
+    "price": 45.05,
+    "availability": "In stock (8 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/d4/8e/d48ee3fe30d6d9b9cc550b76dae5984a.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Chronicles, Vol. 1",
+    "price": 52.6,
+    "availability": "In stock (7 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/df/bd/dfbd53a5c4bcb1bf676bf2a86335adbb.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "This Is Your Brain on Music: The Science of a Human Obsession",
+    "price": 38.4,
+    "availability": "In stock (5 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/d8/d3/d8d3a16113069ccde25da34483a583fb.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Orchestra of Exiles: The Story of Bronislaw Huberman, the Israel Philharmonic, and the One Thousand Jews He Saved from Nazi Horrors",
+    "price": 12.36,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/b5/94/b59425287ce6b186715fa7b01054c2bf.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "No One Here Gets Out Alive",
+    "price": 20.02,
+    "availability": "In stock (4 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/8e/9b/8e9be254974e64a8a3d365a1571e3ec2.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Life",
+    "price": 31.58,
+    "availability": "In stock (2 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/9b/61/9b6155b8013ed9e05ef8a85b4117165b.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Old Records Never Die: One Man's Quest for His Vinyl and His Past",
+    "price": 55.66,
+    "availability": "In stock (1 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/aa/55/aa55bbf7037a0e19ae69485adcc11903.jpg",
+    "category": "Music"
+  },
+  {
+    "title": "Forever Rockers (The Rocker #12)",
+    "price": 28.8,
+    "availability": "In stock (1 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/a2/fc/a2fc91793502f5c10b5826ad606de435.jpg",
+    "category": "Music"
+  }
+]

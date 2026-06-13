@@ -1,0 +1,26 @@
+[
+  {
+    "title": "When We Collided",
+    "price": 31.77,
+    "availability": "In stock (16 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/17/db/17db3de71e8217d4277a9328b04f56cf.jpg",
+    "category": "Contemporary"
+  },
+  {
+    "title": "Someone Like You (The Harrisons #2)",
+    "price": 52.79,
+    "availability": "In stock (14 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/03/67/03672d82cd257167775d88568d2cce38.jpg",
+    "category": "Contemporary"
+  },
+  {
+    "title": "We Are All Completely Beside Ourselves",
+    "price": 24.04,
+    "availability": "In stock (3 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/8d/95/8d95f4fd1ea785555a28d6371444ce6d.jpg",
+    "category": "Contemporary"
+  }
+]

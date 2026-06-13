@@ -1,0 +1,90 @@
+[
+  {
+    "title": "In Her Wake",
+    "price": 12.84,
+    "availability": "In stock (19 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/27/92/2792ef951651ff1eae40a410cac41e0f.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "The Elephant Tree",
+    "price": 23.82,
+    "availability": "In stock (18 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/4b/80/4b80a3d9148e224ed4d6cd4d33f43728.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "Behind Closed Doors",
+    "price": 52.22,
+    "availability": "In stock (18 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/a5/85/a58571db229f2e8f75ea38861eca7f39.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "You (You #1)",
+    "price": 43.61,
+    "availability": "In stock (14 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/f2/f1/f2f19169771a8a8e1a4b72f22e799de8.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "The Guilty (Will Robie #4)",
+    "price": 13.82,
+    "availability": "In stock (14 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/7f/fd/7ffdc9c4b7bf965990c59460da9b66b7.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "The 14th Colony (Cotton Malone #11)",
+    "price": 39.24,
+    "availability": "In stock (14 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/5b/3e/5b3e36ce7c82e9dd8b416a23531c0121.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "Give It Back",
+    "price": 18.32,
+    "availability": "In stock (6 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/15/d4/15d444bf7fc91c7ced84e73ec99d711d.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "Killing Floor (Jack Reacher #1)",
+    "price": 31.49,
+    "availability": "In stock (5 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/b1/5b/b15b4c864b762133cdaf69b58ba55d76.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "The Bone Hunters (Lexy Vaughan & Steven Macaulay #2)",
+    "price": 59.71,
+    "availability": "In stock (4 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/8d/1f/8d1f11673fbe46f47f27b9a4c8efbf8a.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "Far From True (Promise Falls Trilogy #2)",
+    "price": 34.93,
+    "availability": "In stock (4 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/9c/aa/9caacda3ff43984447ee22712e7e9ca9.jpg",
+    "category": "Thriller"
+  },
+  {
+    "title": "The Travelers",
+    "price": 15.77,
+    "availability": "In stock (3 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/42/a3/42a345bdcb3e13d5922ff79cd1c07d0e.jpg",
+    "category": "Thriller"
+  }
+]

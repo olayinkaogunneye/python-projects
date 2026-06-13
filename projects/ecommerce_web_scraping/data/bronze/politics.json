@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Libertarianism for Beginners",
+    "price": 51.33,
+    "availability": "In stock (19 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/91/a4/91a46253e165d144ef5938f2d456b88f.jpg",
+    "category": "Politics"
+  },
+  {
+    "title": "Why the Right Went Wrong: Conservatism--From Goldwater to the Tea Party and Beyond",
+    "price": 52.65,
+    "availability": "In stock (14 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/cd/64/cd64ccda3382d62fea8167eaadd6c9a0.jpg",
+    "category": "Politics"
+  },
+  {
+    "title": "Equal Is Unfair: America's Misguided Fight Against Income Inequality",
+    "price": 56.86,
+    "availability": "In stock (12 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/a6/3b/a63b2576d798c2041c602561499a26aa.jpg",
+    "category": "Politics"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "title": "The Lucifer Effect: Understanding How Good People Turn Evil",
+    "price": 10.4,
+    "availability": "In stock (14 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/4b/2a/4b2a574e8382dcac92d046d30d2c27fc.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "The Golden Condom: And Other Essays on Love Lost and Found",
+    "price": 39.43,
+    "availability": "In stock (12 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/e8/b4/e8b404939ad2b1cc9d896ba646919b17.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "It Didn't Start with You: How Inherited Family Trauma Shapes Who We Are and How to End the Cycle",
+    "price": 56.27,
+    "availability": "In stock (11 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/d3/26/d326484793116ccc786957d31e4fe912.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "An Unquiet Mind: A Memoir of Moods and Madness",
+    "price": 21.3,
+    "availability": "In stock (6 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/e5/65/e56540f5e29286f3d7a1e3eb1912b61f.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "price": 21.14,
+    "availability": "In stock (3 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/7d/9b/7d9ba3173dcc0194ec63f9c77d0763cb.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "Civilization and Its Discontents",
+    "price": 59.95,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/5c/27/5c2728296f41f2f0fb52142e35f49570.jpg",
+    "category": "Psychology"
+  },
+  {
+    "title": "8 Keys to Mental Health Through Exercise",
+    "price": 31.04,
+    "availability": "In stock (3 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/37/5e/375e0267fe12e7aa1f9f7f2bd2711ecb.jpg",
+    "category": "Psychology"
+  }
+]

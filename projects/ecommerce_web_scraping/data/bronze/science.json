@@ -1,0 +1,114 @@
+[
+  {
+    "title": "The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+    "price": 42.96,
+    "availability": "In stock (16 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/a3/9e/a39e7c5c9fc61c2ae0f81116aa8cbb0e.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine",
+    "price": 57.36,
+    "availability": "In stock (16 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/e1/1e/e11e7e9514a123aee2415a1def85e638.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Sorting the Beef from the Bull: The Science of Food Fraud Forensics",
+    "price": 44.74,
+    "availability": "In stock (14 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/5d/a5/5da545b9d44464af8b3d0a9511a050ca.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Tipping Point for Planet Earth: How Close Are We to the Edge?",
+    "price": 37.55,
+    "availability": "In stock (12 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/8e/cb/8ecbec21e76445ee83229a439e22aeaa.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Fabric of the Cosmos: Space, Time, and the Texture of Reality",
+    "price": 55.91,
+    "availability": "In stock (9 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/b2/5a/b25a722c3bab8b311454bc251a75334a.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Diary of a Citizen Scientist: Chasing Tiger Beetles and Other New Ways of Engaging the World",
+    "price": 28.41,
+    "availability": "In stock (8 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/29/5c/295ca7f5981786e8b2c6616d10158808.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Origin of Species",
+    "price": 10.01,
+    "availability": "In stock (7 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/d5/45/d54527d34174d5dd7eaeaaffdfcb3c5c.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Grand Design",
+    "price": 13.76,
+    "availability": "In stock (5 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/9b/69/9b696c2064d6ee387774b6121bb4be91.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Peak: Secrets from the New Science of Expertise",
+    "price": 16.28,
+    "availability": "In stock (5 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/7c/04/7c04c7a92b5ba83361eba81fa364a2ca.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
+    "price": 13.03,
+    "availability": "In stock (3 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/5e/db/5edba3f8d50df6306bc5aa3f2516bd0c.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Disappearing Spoon: And Other True Tales of Madness, Love, and the History of the World from the Periodic Table of the Elements",
+    "price": 57.35,
+    "availability": "In stock (3 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/47/cd/47cd27d1ae8935f974541829eea328f2.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character",
+    "price": 25.83,
+    "availability": "In stock (3 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/a5/50/a550edf8668b36d52d37080a804944ab.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "Seven Brief Lessons on Physics",
+    "price": 30.6,
+    "availability": "In stock (3 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/ae/f9/aef933758e39ba5e4327b2152478bb1a.jpg",
+    "category": "Science"
+  },
+  {
+    "title": "The Selfish Gene",
+    "price": 29.45,
+    "availability": "In stock (1 available)",
+    "rating": "One",
+    "image_url": "../../media/cache/d7/63/d763b806d6f0fb6580f16d08e00bdba6.jpg",
+    "category": "Science"
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Wall and Piece",
+    "price": 44.18,
+    "availability": "In stock (18 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/df/34/df346322ddfdd3b4da0e34cad17f49dc.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "Feathers: Displays of Brilliant Plumage",
+    "price": 49.05,
+    "availability": "In stock (14 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/0a/d4/0ad48326a0d2dbda145c94e1d50ef673.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "Art and Fear: Observations on the Perils (and Rewards) of Artmaking",
+    "price": 48.63,
+    "availability": "In stock (9 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/87/82/87822798b42545d589822bc712dc38a6.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "The New Drawing on the Right Side of the Brain",
+    "price": 43.02,
+    "availability": "In stock (8 available)",
+    "rating": "Three",
+    "image_url": "../../media/cache/0a/8f/0a8f6461714ec9868dea0d37c5da5a81.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "History of Beauty",
+    "price": 10.29,
+    "availability": "In stock (8 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/cb/74/cb74d2953d5249143c3c2e3c281daf6f.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "The Story of Art",
+    "price": 41.14,
+    "availability": "In stock (7 available)",
+    "rating": "Four",
+    "image_url": "../../media/cache/7a/e9/7ae92da23efc2f0f4633f9d2cde370f3.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "The Art Book",
+    "price": 32.34,
+    "availability": "In stock (7 available)",
+    "rating": "Two",
+    "image_url": "../../media/cache/76/90/76904c101329aa50b6653f399318970b.jpg",
+    "category": "Art"
+  },
+  {
+    "title": "Ways of Seeing",
+    "price": 39.51,
+    "availability": "In stock (1 available)",
+    "rating": "Five",
+    "image_url": "../../media/cache/a5/54/a5542b7abc8673ea8254a3fe93b23e4e.jpg",
+    "category": "Art"
+  }
+]

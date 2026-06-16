@@ -25,11 +25,8 @@ class Parser:
 
         return links
 
-    def parse_product_page(self, html: str) -> Optional[Dict]:
-        """
-        Extract product details from a single product page.
-        Returns a dictionary of fields or None if something fails.
-        """
+
+    def parse_product_page(self, html: str, product_url: str = None) -> Optional[Dict]:
         soup = self.get_soup(html)
 
         try:
@@ -38,23 +35,28 @@ class Parser:
             rating = soup.find("p", class_="star-rating")["class"][1]
             image = soup.find("div", class_="item active").img["src"]
             category = soup.find("ul", class_="breadcrumb").find_all("li")[2].text.strip()
+
+        # Extract description
+            desc_tag = soup.find("div", id="product_description")
+            description = (
+            desc_tag.find_next("p").text.strip()
+            if desc_tag else None
+            )
+
+        # Clean price
             raw_price = soup.find("p", class_="price_color").text.strip()
-            cleaned_price = (
-            raw_price
-            .replace("Â", "")   # remove stray encoding character
-            .replace("£", "")   # remove pound sign
-            .strip())                                      
+            cleaned_price = raw_price.replace("Â", "").replace("£", "").strip()
             price = float(cleaned_price)
-
-
 
             return {
                 "title": title,
-                "price": float(price),
+                "price": price,
                 "availability": availability,
                 "rating": rating,
                 "image_url": image,
-                "category": category
+                "category": category,
+                "description": description,
+                "product_page_url": product_url
             }
 
         except Exception as e:

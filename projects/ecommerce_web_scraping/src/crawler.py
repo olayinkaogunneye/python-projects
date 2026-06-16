@@ -21,8 +21,10 @@ class Crawler:
         Path(BRONZE_DATA_DIR).mkdir(parents=True, exist_ok=True)
 
     def full_url(self, relative: str) -> str:
-        cleaned = relative.replace('../../../', '')
-        return BASE_URL + "catalogue/" + cleaned
+    # If the relative URL does not contain 'catalogue/', add it
+        if "catalogue/" not in relative:
+            relative = "catalogue/" + relative.lstrip("./")
+        return urljoin(BASE_URL, relative)
 
 
     def crawl_listing_page(self, url: str) -> List[str]:
@@ -40,7 +42,8 @@ class Crawler:
         if not html:
             return None
 
-        return self.parser.parse_product_page(html)
+        # Pass the URL into the parser
+        return self.parser.parse_product_page(html, url)
 
     def crawl_category(self, url: str) -> List[Dict]:
         """Crawl all pages in a category (handles pagination)."""

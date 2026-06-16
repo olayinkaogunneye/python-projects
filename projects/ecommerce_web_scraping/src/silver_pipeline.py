@@ -1,6 +1,6 @@
 import os
 import json
-from cleaning import clean_record
+from src.cleaning import clean_record
 
 
 BRONZE_DIR = "data/bronze"

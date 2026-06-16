@@ -35,11 +35,20 @@ def load_silver_data():
 # -----------------------------
 # Dimension builders
 # -----------------------------
+
 def create_dim_book(df: pd.DataFrame) -> pd.DataFrame:
-    dim_book = df[['title', 'description', 'product_page_url', 'image_url']].drop_duplicates()
+    # Drop rows where product_page_url is missing
+    df = df.dropna(subset=['product_page_url'])
+
+    # Deduplicate using the true natural key
+    dim_book = df[['product_page_url', 'title', 'description', 'image_url']].drop_duplicates(
+        subset=['product_page_url']
+    )
+
     dim_book = dim_book.reset_index(drop=True)
     dim_book['book_id'] = dim_book.index + 1
-    return dim_book[['book_id', 'title', 'description', 'product_page_url', 'image_url']]
+
+    return dim_book[['book_id', 'product_page_url', 'title', 'description', 'image_url']]
 
 
 def create_dim_category(df: pd.DataFrame) -> pd.DataFrame:
@@ -83,14 +92,15 @@ def create_dim_date(df: pd.DataFrame) -> pd.DataFrame:
 # -----------------------------
 # Fact builder
 # -----------------------------
+    
 def create_fact_book_metrics(df, dim_book, dim_category, dim_rating, dim_date):
     df = df.copy()
     df['scraped_date'] = pd.to_datetime(df['scraped_at']).dt.date
 
-    # Join to dim_book
+    # Join to dim_book using ONLY the natural key
     fact = df.merge(
-        dim_book,
-        on=['title', 'description', 'product_page_url', 'image_url'],
+        dim_book[['book_id', 'product_page_url']],
+        on='product_page_url',
         how='left'
     )
 
@@ -128,7 +138,6 @@ def create_fact_book_metrics(df, dim_book, dim_category, dim_rating, dim_date):
     ]]
 
     return fact_book_metrics
-
 
 # -----------------------------
 # Save helpers

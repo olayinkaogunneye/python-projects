@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Sophie's World",
+    "price": 15.94,
+    "availability": 18,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/d7/39/d73914232130fdf90d66f02fd9798f2b.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "The Death of Humanity: and the Case for Life",
+    "price": 58.11,
+    "availability": 16,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/3f/f6/3ff6fe5d0c5ca7ab2ed8b5971e299caa.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "The Stranger",
+    "price": 17.44,
+    "availability": 15,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/c8/1a/c81aea97de1daaa0081d96f8564c204c.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Proofs of God: Classical Arguments from Tertullian to Barth",
+    "price": 54.21,
+    "availability": 8,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/f6/cb/f6cb2300a1235a344f1c11b2be9a605d.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Kierkegaard: A Christian Missionary to Christians",
+    "price": 47.13,
+    "availability": 8,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/bf/90/bf90ad2c3cab628096db8fca010797b4.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "At The Existentialist Caf\u00c3\u00a9: Freedom, Being, and apricot cocktails with: Jean-Paul Sartre, Simone de Beauvoir, Albert Camus, Martin Heidegger, Edmund Husserl, Karl Jaspers, Maurice Merleau-Ponty and others",
+    "price": 29.93,
+    "availability": 7,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/ce/da/ceda6d577d0609261f997bd99872013b.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Critique of Pure Reason",
+    "price": 20.75,
+    "availability": 5,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/3b/28/3b28ec3663a81d36272a08e5a49644f2.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Run, Spot, Run: The Ethics of Keeping Pets",
+    "price": 20.02,
+    "availability": 2,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/8c/bf/8cbf4667b5798cb8195f1e126ddd6a5c.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "The Nicomachean Ethics",
+    "price": 36.34,
+    "availability": 1,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/16/f4/16f4518319f7dcadc23d020279f78545.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Meditations",
+    "price": 25.89,
+    "availability": 1,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/90/f7/90f79652caecac36bc97bf7b769c8fc4.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  },
+  {
+    "title": "Beyond Good and Evil",
+    "price": 43.38,
+    "availability": 1,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/d1/7f/d17f326e3fcaf84c37d6d51e3470bcc6.jpg",
+    "category": "Philosophy",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.633878"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "title": "The Argonauts",
+    "price": 10.93,
+    "availability": 15,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/22/d0/22d01c710471f94dabfa41083fa3cf4e.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.259153"
+  },
+  {
+    "title": "M Train",
+    "price": 27.18,
+    "availability": 11,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/f0/9f/f09fd4a3200b94db86364f308ac02530.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Lab Girl",
+    "price": 40.85,
+    "availability": 11,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/26/ff/26ffcda626a5561e483afa19b58db8ac.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Approval Junkie: Adventures in Caring Too Much",
+    "price": 58.81,
+    "availability": 5,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/96/6d/966d8d2afdead087cba0f29a69f89ba5.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Running with Scissors",
+    "price": 12.91,
+    "availability": 3,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/4c/e1/4ce1ed40df359e001020e1ea55674381.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Me Talk Pretty One Day",
+    "price": 57.6,
+    "availability": 3,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/61/b2/61b220c2079a45a7975a397c8849e00e.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Lust & Wonder",
+    "price": 11.87,
+    "availability": 3,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/25/1c/251ce4355601534338a646f2b63be93a.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "Life Without a Recipe",
+    "price": 59.04,
+    "availability": 3,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/9e/4f/9e4fb935df3113056cc9bdee6cd09ea6.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  },
+  {
+    "title": "A Heartbreaking Work of Staggering Genius",
+    "price": 54.29,
+    "availability": 3,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/47/f3/47f3d4f1e85773bf41ba64a036e37994.jpg",
+    "category": "Autobiography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.260081"
+  }
+]

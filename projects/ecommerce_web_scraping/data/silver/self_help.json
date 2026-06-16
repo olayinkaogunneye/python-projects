@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Online Marketing for Busy Authors: A Step-By-Step Guide",
+    "price": 46.35,
+    "availability": 16,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/49/e1/49e1f207b2149e34390a2c6aa7cfc113.jpg",
+    "category": "Self Help",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.829763"
+  },
+  {
+    "title": "How to Be Miserable: 40 Strategies You Already Use",
+    "price": 46.03,
+    "availability": 16,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/b0/9d/b09d7cb6aa8ae112dd457e588762d293.jpg",
+    "category": "Self Help",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.829763"
+  },
+  {
+    "title": "Overload: How to Unplug, Unwind, and Unleash Yourself from the Pressure of Stress",
+    "price": 52.15,
+    "availability": 14,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/7f/6b/7f6bfd0fc24b974b4d7721899e93aa2c.jpg",
+    "category": "Self Help",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.829763"
+  },
+  {
+    "title": "You Are a Badass: How to Stop Doubting Your Greatness and Start Living an Awesome Life",
+    "price": 12.08,
+    "availability": 7,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/73/7e/737e4921bc14d72245aad1f21d7a3eef.jpg",
+    "category": "Self Help",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.829763"
+  },
+  {
+    "title": "How to Stop Worrying and Start Living",
+    "price": 46.49,
+    "availability": 6,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/64/0c/640cfc86cd3943cef402dc6082497eec.jpg",
+    "category": "Self Help",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.829763"
+  }
+]

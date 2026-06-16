@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Fifty Shades Freed (Fifty Shades #3)",
+    "price": 15.36,
+    "availability": 3,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/f4/07/f407d3bbf457d35701dfe72ee9ef3b68.jpg",
+    "category": "Adult Fiction",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.148887"
+  }
+]

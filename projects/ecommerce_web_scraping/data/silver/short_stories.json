@@ -1,0 +1,13 @@
+[
+  {
+    "title": "The Grownup",
+    "price": 35.88,
+    "availability": 8,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/7e/cc/7ecc23cfaa84fb015a5333f2a5d97f23.jpg",
+    "category": "Short Stories",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.882000"
+  }
+]

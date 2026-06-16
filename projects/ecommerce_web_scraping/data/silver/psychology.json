@@ -1,0 +1,79 @@
+[
+  {
+    "title": "The Lucifer Effect: Understanding How Good People Turn Evil",
+    "price": 10.4,
+    "availability": 14,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/4b/2a/4b2a574e8382dcac92d046d30d2c27fc.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "The Golden Condom: And Other Essays on Love Lost and Found",
+    "price": 39.43,
+    "availability": 12,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/e8/b4/e8b404939ad2b1cc9d896ba646919b17.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "It Didn't Start with You: How Inherited Family Trauma Shapes Who We Are and How to End the Cycle",
+    "price": 56.27,
+    "availability": 11,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/d3/26/d326484793116ccc786957d31e4fe912.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "An Unquiet Mind: A Memoir of Moods and Madness",
+    "price": 21.3,
+    "availability": 6,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/e5/65/e56540f5e29286f3d7a1e3eb1912b61f.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "price": 21.14,
+    "availability": 3,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/7d/9b/7d9ba3173dcc0194ec63f9c77d0763cb.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "Civilization and Its Discontents",
+    "price": 59.95,
+    "availability": 3,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/5c/27/5c2728296f41f2f0fb52142e35f49570.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  },
+  {
+    "title": "8 Keys to Mental Health Through Exercise",
+    "price": 31.04,
+    "availability": 3,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/37/5e/375e0267fe12e7aa1f9f7f2bd2711ecb.jpg",
+    "category": "Psychology",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.688608"
+  }
+]

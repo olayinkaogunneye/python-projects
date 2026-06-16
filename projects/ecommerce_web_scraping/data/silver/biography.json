@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Louisa: The Extraordinary Life of Mrs. Adams",
+    "price": 16.85,
+    "availability": 15,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/ec/2a/ec2a7df6fdafc7e6f97b6c6da7980584.jpg",
+    "category": "Biography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.280559"
+  },
+  {
+    "title": "Setting the World on Fire: The Brief, Astonishing Life of St. Catherine of Siena",
+    "price": 21.15,
+    "availability": 11,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/86/54/86546f67cb4a3112b15b03a4ec2e7255.jpg",
+    "category": "Biography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.280559"
+  },
+  {
+    "title": "The Faith of Christopher Hitchens: The Restless Soul of the World's Most Notorious Atheist",
+    "price": 39.55,
+    "availability": 7,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/d7/cb/d7cbdb36b54398ba3876488726befc3d.jpg",
+    "category": "Biography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.280559"
+  },
+  {
+    "title": "Benjamin Franklin: An American Life",
+    "price": 48.19,
+    "availability": 7,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/c2/7e/c27efce6a2321c10b0d34035308ace37.jpg",
+    "category": "Biography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.280559"
+  },
+  {
+    "title": "The Rise of Theodore Roosevelt (Theodore Roosevelt #1)",
+    "price": 42.57,
+    "availability": 3,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/4c/09/4c090b85892f532210e44d84b752b64d.jpg",
+    "category": "Biography",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.280559"
+  }
+]

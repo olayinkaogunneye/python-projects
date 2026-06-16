@@ -1,0 +1,24 @@
+[
+  {
+    "title": "All the Light We Cannot See",
+    "price": 29.87,
+    "availability": 14,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/a6/96/a696c1d6bb1ff8f65f51a116160b2aef.jpg",
+    "category": "Historical",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.495717"
+  },
+  {
+    "title": "The Girl You Left Behind (The Girl You Left Behind #1)",
+    "price": 15.79,
+    "availability": 6,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/6d/72/6d72120f94d38e356612c8a78e82a53d.jpg",
+    "category": "Historical",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.495717"
+  }
+]

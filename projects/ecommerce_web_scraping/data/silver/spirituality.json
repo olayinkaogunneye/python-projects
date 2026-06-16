@@ -1,0 +1,68 @@
+[
+  {
+    "title": "The Four Agreements: A Practical Guide to Personal Freedom",
+    "price": 17.66,
+    "availability": 18,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/2b/1b/2b1bfecae9d512cb6ee943ccf786216f.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  },
+  {
+    "title": "The Activist's Tao Te Ching: Ancient Advice for a Modern Revolution",
+    "price": 32.24,
+    "availability": 16,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/da/0c/da0ca35421a5120b2109028e44a53f56.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  },
+  {
+    "title": "Chasing Heaven: What Dying Taught Me About Living",
+    "price": 37.8,
+    "availability": 15,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/87/cd/87cd2aa5c4e38244ffcb17b84b0f6efd.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  },
+  {
+    "title": "If I Gave You God's Phone Number....: Searching for Spirituality in America",
+    "price": 20.91,
+    "availability": 9,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/91/1a/911a12f954fc65fc4cc0e8a8f8b30750.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  },
+  {
+    "title": "Unreasonable Hope: Finding Faith in the God Who Brings Purpose to Your Pain",
+    "price": 46.33,
+    "availability": 7,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/80/43/804385d2b49e2f9e26a7d88b8ccaf62d.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  },
+  {
+    "title": "A New Earth: Awakening to Your Life's Purpose",
+    "price": 55.65,
+    "availability": 4,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/13/1b/131bca3895aa2892f400020cd939cd42.jpg",
+    "category": "Spirituality",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.900622"
+  }
+]

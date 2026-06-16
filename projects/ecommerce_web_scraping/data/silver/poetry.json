@@ -1,0 +1,211 @@
+[
+  {
+    "title": "A Light in the Attic",
+    "price": 51.77,
+    "availability": 22,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/fe/72/fe72f0532301ec28892ae79a629a293c.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.655162"
+  },
+  {
+    "title": "The Black Maria",
+    "price": 52.15,
+    "availability": 19,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/d1/7a/d17a3e313e52e1be5651719e4fba1d16.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.655162"
+  },
+  {
+    "title": "Shakespeare's Sonnets",
+    "price": 20.66,
+    "availability": 19,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/4d/7a/4d7a79a8be80a529b277ed5c4d8ba482.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.655162"
+  },
+  {
+    "title": "Olio",
+    "price": 23.88,
+    "availability": 19,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/b1/0e/b10eabab1e1c811a6d47969904fd5755.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.655162"
+  },
+  {
+    "title": "You can't bury them all: Poems",
+    "price": 33.63,
+    "availability": 17,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/b7/44/b7440aa88046b0bf8cba50d59295518e.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Slow States of Collapse: Poems",
+    "price": 57.31,
+    "availability": 17,
+    "rating": 3,
+    "image_url": "https://books.toscrape.com/media/cache/db/ac/dbac3faca8a799824f5725d66c0fcce3.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Untitled Collection: Sabbath Poems 2014",
+    "price": 14.27,
+    "availability": 16,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/65/6e/656e79dfd4f8b6bf19ffde2c75ceda81.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Poems That Make Grown Women Cry",
+    "price": 14.19,
+    "availability": 15,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/18/ac/18ac3f16b10a5fc47e603d93335e3f24.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Night Sky with Exit Wounds",
+    "price": 41.05,
+    "availability": 15,
+    "rating": 1,
+    "image_url": "https://books.toscrape.com/media/cache/ff/48/ff48b0696fb97b7f7b5c6d15e372cb70.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "salt.",
+    "price": 46.78,
+    "availability": 14,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/c9/92/c9924f9637aef6d9fc8e165be62f69ee.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Quarter Life Poetry: Poems for the Young, Broke and Hangry",
+    "price": 50.89,
+    "availability": 14,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/68/92/68922093080c377fa521ba64d8d372e1.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Out of Print: City Lights Spotlight No. 14",
+    "price": 53.64,
+    "availability": 8,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/4c/5a/4c5a559bc2edb79e5d48af4dbc813eb2.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Les Fleurs du Mal",
+    "price": 29.04,
+    "availability": 8,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/3d/32/3d324c0b55c221e9b701d4e772b42ad6.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Howl and Other Poems",
+    "price": 40.45,
+    "availability": 8,
+    "rating": 2,
+    "image_url": "https://books.toscrape.com/media/cache/09/8e/098e81fcea9f6b4c15f6d207301c0085.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Leave This Song Behind: Teen Poetry at Its Best",
+    "price": 51.17,
+    "availability": 7,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/5e/ca/5eca840ed2d6f0f0d2f795922cb76741.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "The Collected Poems of W.B. Yeats (The Collected Works of W.B. Yeats #1)",
+    "price": 15.42,
+    "availability": 6,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/b3/8c/b38cadc69f4a2db0aae2ee2867ab8583.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "The Crossover",
+    "price": 38.77,
+    "availability": 5,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/25/fe/25fe373b974387a66ff1dea80f023ccb.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Booked",
+    "price": 17.49,
+    "availability": 5,
+    "rating": 5,
+    "image_url": "https://books.toscrape.com/media/cache/cf/3b/cf3b0341f5f4f4ad2c1439c11d32a9b1.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  },
+  {
+    "title": "Twenty Love Poems and a Song of Despair",
+    "price": 30.95,
+    "availability": 1,
+    "rating": 4,
+    "image_url": "https://books.toscrape.com/media/cache/ec/10/ec10f11ff0ea13c17a42d81b03896235.jpg",
+    "category": "Poetry",
+    "description": null,
+    "product_page_url": null,
+    "scraped_at": "2026-06-16T09:42:03.657578"
+  }
+]

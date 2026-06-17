@@ -1,3 +1,4 @@
+from datetime import UTC, datetime
 from urllib.parse import urljoin
 from pathlib import Path
 from typing import List, Dict, Optional
@@ -36,14 +37,21 @@ class Crawler:
         links = self.parser.parse_listing_page(html)
         return [self.full_url(link) for link in links]
 
+
     def crawl_product_page(self, url: str) -> Optional[Dict]:
         """Return product details from a product page."""
         html = self.scraper.fetch_page(url)
         if not html:
             return None
 
-        # Pass the URL into the parser
-        return self.parser.parse_product_page(html, url)
+        # Parse product details
+        data = self.parser.parse_product_page(html, url)
+
+        # Add timestamp ONCE per product scrape
+        data["scraped_at"] = datetime.now(UTC).isoformat()
+
+        return data
+
 
     def crawl_category(self, url: str) -> List[Dict]:
         """Crawl all pages in a category (handles pagination)."""

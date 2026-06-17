@@ -100,5 +100,6 @@ def clean_record(record):
         "category": clean_category(record.get("category")),
         "description": clean_description(record.get("description")),
         "product_page_url": clean_product_url(record.get("product_page_url")),
-        "scraped_at": add_timestamp()
+        "scraped_at": record.get("scraped_at")
+
     }

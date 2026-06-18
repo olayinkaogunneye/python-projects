@@ -4,23 +4,19 @@ A complete, production‑style data engineering project built on the BooksToScra
 
 This pipeline demonstrates:
 
-- automated category discovery
-
-- scalable web scraping
-
-- medallion architecture (Bronze → Silver → Gold)
-
-- dimensional modeling (Kimball)
-
-- analytics engineering
-
-- testing
-
-- documentation
-
-- EDA + visuals
+- automated category discovery  
+- scalable web scraping  
+- medallion architecture (Bronze → Silver → Gold)  
+- dimensional modeling (Kimball)  
+- analytics engineering  
+- testing  
+- documentation  
+- EDA + visuals  
+- **incremental data processing (new)**
 
 It is designed as a portfolio‑ready showcase of modern data engineering skills.
+
+---
 
 ## Project Architecture
 ```
@@ -37,66 +33,35 @@ Gold Layer (Fact + Dimensions)
 EDA + Visuals
 ```
 
-### Features
+---
 
-✔ **Automated Category Discovery**
-Extracts all category names and URLs from the homepage.
+## Features
 
-✔ **Full‑Site Web Scraper**
-Scrapes every book across all categories and pages.
+✔ **Automated Category Discovery**  
+✔ **Full‑Site Web Scraper**  
+✔ **Bronze Layer** — raw structured JSON  
+✔ **Silver Layer** — cleaned analytics‑ready dataset  
+✔ **Gold Layer** — dimensional warehouse (star schema)  
+✔ **EDA + Visuals**  
+✔ **Incremental Pipeline (new)**  
+Processes daily snapshots without overwriting existing data.
 
-✔ **Bronze Layer**
-Stores raw structured JSON extracted from HTML.
+---
 
-✔ **Silver Layer**
-Cleans and unifies all books into a single analytics‑ready dataset.
+## Tech Stack
 
-✔ **Gold Layer (Dimensional Model)**
-Warehouse‑ready star schema:
-
-    **dim_book**
-
-    **dim_category**
-
-    **dim_rating**
-
-    **dim_date**
-
-    **fact_book_metrics**
-
-✔ EDA + Visuals
-
-Explores:
-
-    price distribution
-
-    rating distribution
-
-    category patterns
-
-    availability insights
-
-    top expensive books
-
-### Tech Stack
-
-- Python
-
-- Requests / BeautifulSoup
-
-- Pandas
-
-- PyTest
-
-- Jupyter Notebook
-
-- Matplotlib / Seaborn
-
-- Medallion Architecture
-
+- Python  
+- Requests / BeautifulSoup  
+- Pandas  
+- PyTest  
+- Jupyter Notebook  
+- Matplotlib / Seaborn  
+- Medallion Architecture  
 - Dimensional Modeling (Kimball)
 
-### Repository Structure
+---
+
+## Repository Structure
 
 ```
 books_pipeline/
@@ -116,6 +81,13 @@ books_pipeline/
 │   ├── silver_pipeline.py
 │   ├── gold_pipeline.py
 │   └── main.py
+│
+├── src_incremental/          ← NEW
+│   ├── bronze_incremental.py
+│   ├── silver_incremental.py
+│   ├── gold_incremental.py
+│   ├── utils.py
+│   └── __init__.py
 │
 ├── tests/
 │   ├── test_scraper.py
@@ -138,132 +110,115 @@ books_pipeline/
     └── future_work.md
 ```
 
-### How the Pipeline Works
+---
 
-🔍 **Category Discovery**
+# 🆕 **Incremental Pipeline (New Addition)**
 
-Automatically extracts all category names and URLs.
+The project now includes a **fully incremental Bronze → Silver → Gold pipeline** that processes **daily snapshots** without overwriting existing data.
 
-🕷️ **Crawler**
+### 🥉 Incremental Bronze  
+- Saves raw JSON files with a date prefix  
+- Preserves historical raw scrapes  
+- Example: `2026-06-18_all_products.json`
 
-Scrapes:
+### 🥈 Incremental Silver  
+- Processes **only today's Bronze files**  
+- Cleans and deduplicates within the day  
+- Saves a daily Silver snapshot  
+- Example: `2026-06-18_all_books.json`
 
-- title
+### 🥇 Incremental Gold  
+- Loads **all Silver snapshots**  
+- Upserts dimensions (book, category, rating, date)  
+- Appends new fact rows for each day  
+- Maintains a historical warehouse
 
-- price
+This enables:
 
-- rating
+- price trend analysis  
+- availability trends  
+- category evolution  
+- historical reporting  
+- time‑series analytics  
 
-- availability
+---
 
-- description
+## How the Pipeline Works
 
-- image URL
-
-- product URL
-
-🥉 **Bronze Layer**
-
-Stores raw structured JSON.
-
-🥈 **Silver Layer**
-
-Cleans and unifies all books into:
-
-`data/silver/all_books.json`
-
-🥇 **Gold Layer**
-
-Dimensional model:
-
-- dim_book
-
-- dim_category
-
-- dim_rating
-
-- dim_date
-
-- fact_book_metrics
-
+🔍 **Category Discovery**  
+🕷️ **Crawler**  
+🥉 **Bronze Layer**  
+🥈 **Silver Layer**  
+🥇 **Gold Layer**  
 📊 **EDA**
 
-Visuals include:
+(See original README for full details.)
 
-- price distribution
+---
 
-- rating distribution
+## How to Run the Full Pipeline
 
-- category counts
-
-- availability patterns
-
-- top expensive books
-
-### Key Insights
-
-- Most books are priced between £20–£60
-
-- Ratings cluster around 3–4 stars
-
-- Some categories have very low availability
-
-- A few categories contain premium books
-
-- Category popularity varies significantly
-
-### How to Run the Pipeline
-
-1. Install dependencies
+### **Original Full‑Refresh Pipeline**
+1. Install dependencies  
 ```
 pip install -r requirements.txt
-
 ```
-2. Run the full scraper
 
+2. Run full scraper  
 ```
 python src/main.py
-
 ```
-3. Run Silver pipeline
 
+3. Run Silver pipeline  
 ```
 python src/silver_pipeline.py
-
 ```
-4. Run Gold pipeline
 
+4. Run Gold pipeline  
 ```
 python src/gold_pipeline.py
-
 ```
-5. Open the EDA notebook
 
+---
+
+# 🆕 **How to Run the Incremental Pipeline**
+
+### 1. Run Incremental Bronze  
 ```
-notebooks/eda.ipynb
-
+python src_incremental/bronze_incremental.py
 ```
-### Future Enhancements
 
-Incremental scraping
+### 2. Run Incremental Silver  
+```
+python src_incremental/silver_incremental.py
+```
 
-Historical fact tables
+### 3. Run Incremental Gold  
+```
+python src_incremental/gold_incremental.py
+```
 
-SCD Type 2 for dim_book
+This produces daily historical snapshots across all layers.
 
-Multi‑site scraping
+---
 
-Power BI dashboard
+## Future Enhancements
 
-ML model for price prediction
+- Incremental scraping (done)  
+- Historical fact tables (done)  
+- SCD Type 2 for dim_book  
+- Multi‑site scraping  
+- Power BI dashboard  
+- ML model for price prediction  
 
+---
 
-### AI Collaboration Notice
+## AI Collaboration Notice
+
 Portions of this project were developed with the assistance of AI tools, specifically for improving documentation quality, refining code structure, and aligning scripts for consistency. All core engineering decisions, data modeling logic, and final code reviews were performed manually.
 
+---
 
-⭐ Author
-
-Olayinka Ogunneye
-
+⭐ **Author**  
+Olayinka Ogunneye  
 Analytics Engineer

@@ -23,6 +23,15 @@ import json
 import pandas as pd
 from pathlib import Path
 
+# ⭐ Import utils
+from src_incremental.utils import (
+    ensure_folder,
+    list_all_json,
+    log_info,
+    log_warning,
+    log_success
+)
+
 SILVER_DIR = "data/silver"
 GOLD_DIR = "data/gold"
 
@@ -30,37 +39,36 @@ GOLD_DIR = "data/gold"
 # -----------------------------
 # Helpers
 # -----------------------------
-def ensure_gold_folder():
-    Path(GOLD_DIR).mkdir(parents=True, exist_ok=True)
-
-
 def load_silver_snapshots():
     """Load ALL Silver daily files into a single DataFrame."""
     records = []
-    for filename in os.listdir(SILVER_DIR):
-        if filename.endswith(".json"):
-            path = os.path.join(SILVER_DIR, filename)
-            with open(path, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                records.extend(data)
-            print(f"[SILVER] Loaded {filename} ({len(data)} records)")
+
+    for filename in list_all_json(SILVER_DIR):
+        path = os.path.join(SILVER_DIR, filename)
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            records.extend(data)
+        log_info(f"Loaded Silver snapshot: {filename} ({len(data)} records)")
+
     return pd.DataFrame(records)
 
 
 def load_existing_table(name: str) -> pd.DataFrame:
     """Load existing Gold table if it exists, else return empty DataFrame."""
     path = os.path.join(GOLD_DIR, f"{name}.csv")
+
     if os.path.exists(path):
-        print(f"[GOLD] Loaded existing {name}")
+        log_info(f"Loaded existing {name}")
         return pd.read_csv(path)
-    print(f"[GOLD] No existing {name}, creating new one")
+
+    log_warning(f"No existing {name}, creating new one")
     return pd.DataFrame()
 
 
 def save_table(df: pd.DataFrame, name: str):
     path = os.path.join(GOLD_DIR, f"{name}.csv")
     df.to_csv(path, index=False)
-    print(f"[GOLD] Saved {name} → {path}")
+    log_success(f"Saved {name} → {path}")
 
 
 # -----------------------------
@@ -173,14 +181,15 @@ def build_fact(df_silver, dim_book, dim_category, dim_rating, dim_date):
 # Main Incremental Pipeline
 # -----------------------------
 def run_gold_incremental():
-    print("\n=== Running Incremental Gold Pipeline ===\n")
+    log_info("=== Running Incremental Gold Pipeline ===")
 
-    ensure_gold_folder()
+    # ⭐ Ensure Gold folder exists
+    ensure_folder(GOLD_DIR)
 
     # Load all Silver snapshots
     silver_df = load_silver_snapshots()
     if silver_df.empty:
-        print("[ERROR] No Silver data found.")
+        log_warning("No Silver data found.")
         return
 
     # Load existing Gold tables
@@ -209,7 +218,7 @@ def run_gold_incremental():
     save_table(dim_date, "dim_date")
     save_table(fact_book_metrics, "fact_book_metrics")
 
-    print("\n=== Incremental Gold Pipeline Complete ===\n")
+    log_success("=== Incremental Gold Pipeline Complete ===")
 
 
 if __name__ == "__main__":

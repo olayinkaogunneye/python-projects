@@ -12,17 +12,22 @@ This preserves daily snapshots and enables historical Gold fact tables.
 
 import os
 import json
-from datetime import datetime, UTC
 from pathlib import Path
 
 from src.cleaning import clean_record
 
+# ⭐ Import utils
+from src_incremental.utils import (
+    today_str,
+    list_files_with_prefix,
+    ensure_folder,
+    log_info,
+    log_warning,
+    log_success
+)
+
 BRONZE_DIR = "data/bronze"
 SILVER_DIR = "data/silver"
-
-
-def ensure_silver_folder():
-    Path(SILVER_DIR).mkdir(parents=True, exist_ok=True)
 
 
 def load_bronze_file(path):
@@ -33,25 +38,23 @@ def load_bronze_file(path):
 def save_silver_file(data, output_path):
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
-    print(f"[SILVER] Saved cleaned file → {output_path}")
+    log_success(f"Saved cleaned file → {output_path}")
 
 
 def run_silver_incremental():
-    print("\n=== Running Incremental Silver Pipeline ===\n")
+    log_info("=== Running Incremental Silver Pipeline ===")
 
-    ensure_silver_folder()
+    # ⭐ Ensure Silver folder exists
+    ensure_folder(SILVER_DIR)
 
-    # Today's date prefix
-    today = datetime.now(UTC).date().isoformat()
+    # ⭐ Today's date prefix
+    today = today_str()
 
-    # Load ONLY today's Bronze files
-    bronze_files = [
-        f for f in os.listdir(BRONZE_DIR)
-        if f.startswith(today) and f.endswith(".json")
-    ]
+    # ⭐ Load ONLY today's Bronze files using utils
+    bronze_files = list_files_with_prefix(BRONZE_DIR, today)
 
     if not bronze_files:
-        print(f"[WARNING] No Bronze files found for {today}.")
+        log_warning(f"No Bronze files found for {today}.")
         return
 
     all_records = []
@@ -59,11 +62,11 @@ def run_silver_incremental():
     # Load today's Bronze files
     for filename in bronze_files:
         input_path = os.path.join(BRONZE_DIR, filename)
-        print(f"[BRONZE] Loading {filename}...")
+        log_info(f"Loading Bronze file: {filename}")
         bronze_data = load_bronze_file(input_path)
         all_records.extend(bronze_data)
 
-    print(f"[INFO] Total raw records from today's Bronze: {len(all_records)}")
+    log_info(f"Total raw records from today's Bronze: {len(all_records)}")
 
     # Clean records
     cleaned = [clean_record(rec) for rec in all_records]
@@ -76,13 +79,13 @@ def run_silver_incremental():
     }
     unified_silver = list(deduped_by_url.values())
 
-    print(f"[INFO] Cleaned records after dedupe: {len(unified_silver)}")
+    log_info(f"Cleaned records after dedupe: {len(unified_silver)}")
 
     # Save today's Silver file
     output_path = os.path.join(SILVER_DIR, f"{today}_all_books.json")
     save_silver_file(unified_silver, output_path)
 
-    print("\n=== Incremental Silver Pipeline Complete ===\n")
+    log_success("=== Incremental Silver Pipeline Complete ===")
 
 
 if __name__ == "__main__":

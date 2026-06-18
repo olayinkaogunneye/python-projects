@@ -14,35 +14,43 @@ Output examples:
 
 import json
 from pathlib import Path
-from datetime import datetime, UTC
 
 from src.category_discovery import CategoryDiscovery
 from src.crawler import Crawler
 from src.config import BRONZE_DATA_DIR
+
+# ⭐ Import utils
+from src_incremental.utils import (
+    today_str,
+    ensure_folder,
+    log_info,
+    log_success,
+    log_warning
+)
 
 
 def save_json(data, filename):
     """Save Python data as JSON inside the Bronze folder."""
     path = Path(BRONZE_DATA_DIR) / filename
     path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-    print(f"[BRONZE] Saved: {path}")
+    log_success(f"Saved: {path}")
 
 
 def run_bronze_incremental():
-    print("\n=== Running Incremental Bronze Pipeline ===\n")
+    log_info("=== Running Incremental Bronze Pipeline ===")
 
-    # Ensure bronze folder exists
-    Path(BRONZE_DATA_DIR).mkdir(parents=True, exist_ok=True)
+    # ⭐ Ensure bronze folder exists (using utils)
+    ensure_folder(BRONZE_DATA_DIR)
 
-    # Today's date prefix
-    today = datetime.now(UTC).date().isoformat()
+    # ⭐ Today's date prefix (using utils)
+    today = today_str()
 
     # Step 1 — Discover categories
     cd = CategoryDiscovery()
     categories = cd.discover()
 
     if not categories:
-        print("[ERROR] No categories found. Exiting.")
+        log_warning("No categories found. Exiting.")
         return
 
     crawler = Crawler()
@@ -50,7 +58,7 @@ def run_bronze_incremental():
 
     # Step 2 — Scrape each category
     for name, url in categories.items():
-        print(f"\n[SCRAPE] Category: {name}")
+        log_info(f"Scraping category: {name}")
 
         products = crawler.crawl_category(url)
 
@@ -67,7 +75,7 @@ def run_bronze_incremental():
     combined_filename = f"{today}_all_products.json"
     save_json(all_products, combined_filename)
 
-    print("\n=== Incremental Bronze Pipeline Complete ===\n")
+    log_success("=== Incremental Bronze Pipeline Complete ===")
 
 
 if __name__ == "__main__":
